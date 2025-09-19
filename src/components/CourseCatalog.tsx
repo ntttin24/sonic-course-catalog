@@ -106,11 +106,11 @@ export function CourseCatalog({ courses }: CourseCatalogProps) {
 
 				{/* Course Grid */}
 				{filteredCourses.length > 0 ? (
-					<div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
+					<div className="grid grid-cols-2 gap-3 sm:gap-4 md:gap-6 lg:gap-8 md:grid-cols-2 xl:grid-cols-3 items-stretch">
 						{filteredCourses.map((course, index) => (
 							<div
 								key={course.id}
-								className="animate-fade-in"
+								className="animate-fade-in flex"
 								style={{
 									animationDelay: `${index * 100}ms`,
 									animationFillMode: "both",
