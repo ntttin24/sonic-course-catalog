@@ -1,0 +1,90 @@
+[
+  {
+    "id": "intro-smart-contracts",
+    "title": "Intro to Sonic Smart Contracts",
+    "description": "Learn to write and deploy smart contracts on Sonic EVM. Master Solidity fundamentals and understand the unique features of Sonic's high-performance blockchain.",
+    "difficulty": "Beginner",
+    "category": "SMART CONTRACTS",
+    "duration": "4 weeks",
+    "modules": 8,
+    "rating": 4.8,
+    "students": 2847,
+    "isFeatured": true,
+    "tags": ["EVM", "Solidity", "Sonic"],
+    "href": "/courses/intro-smart-contracts"
+  },
+  {
+    "id": "intermediate-defi",
+    "title": "DeFi on Sonic: AMMs & Lending",
+    "description": "Build sophisticated AMM protocols and lending platforms. Explore advanced DeFi mechanisms and implement real-world financial primitives.",
+    "difficulty": "Intermediate",
+    "category": "DEFI",
+    "duration": "6 weeks",
+    "modules": 12,
+    "rating": 4.9,
+    "students": 1923,
+    "isFeatured": true,
+    "tags": ["DeFi", "AMM", "Lending", "Yield"],
+    "href": "/courses/defi"
+  },
+  {
+    "id": "advanced-performance",
+    "title": "Advanced Performance & Gas Optimization",
+    "description": "Master gas optimization techniques and advanced patterns. Learn to build ultra-efficient contracts that leverage Sonic's speed advantages.",
+    "difficulty": "Advanced",
+    "category": "ADVANCED TOPICS",
+    "duration": "8 weeks",
+    "modules": 16,
+    "rating": 4.7,
+    "students": 891,
+    "isFeatured": false,
+    "tags": ["Optimization", "Gas", "Patterns", "Performance"],
+    "href": "/courses/performance"
+  },
+  {
+    "id": "tooling-and-test",
+    "title": "Developer Tooling & Testing Mastery",
+    "description": "Set up professional development environments, implement comprehensive testing strategies, and master CI/CD for Sonic projects.",
+    "difficulty": "Intermediate",
+    "category": "TOOLS & INFRASTRUCTURE",
+    "duration": "3 weeks",
+    "modules": 6,
+    "rating": 4.6,
+    "students": 1456,
+    "isFeatured": false,
+    "tags": ["Testing", "CI", "Tooling", "DevOps"],
+    "href": "/courses/tooling"
+  },
+  {
+    "id": "security-auditing",
+    "title": "Smart Contract Security & Auditing",
+    "description": "Learn to identify vulnerabilities, perform security audits, and implement best practices for secure smart contract development.",
+    "difficulty": "Advanced",
+    "category": "SECURITY",
+    "duration": "5 weeks",
+    "modules": 10,
+    "rating": 4.8,
+    "students": 672,
+    "isFeatured": true,
+    "tags": ["Security", "Auditing", "Vulnerabilities"],
+    "href": "/courses/security"
+  },
+  {
+    "id": "cross-chain-bridges",
+    "title": "Building Cross-Chain Bridges",
+    "description": "Design and implement secure cross-chain bridges. Understand interoperability protocols and connect Sonic with other blockchains.",
+    "difficulty": "Advanced",
+    "category": "ADVANCED TOPICS",
+    "duration": "7 weeks",
+    "modules": 14,
+    "rating": 4.5,
+    "students": 534,
+    "isFeatured": false,
+    "tags": ["Bridges", "Interoperability", "Cross-chain"],
+    "href": "/courses/bridges"
+  }
+]
+
+
+
+
