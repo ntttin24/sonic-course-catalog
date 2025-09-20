@@ -61,7 +61,7 @@ export default function Header({ onSearch, onFilterChange, searchQuery, activeFi
 									variant={activeFilter === filter ? "default" : "ghost"}
 									size="sm"
 									onClick={() => onFilterChange(filter)}
-									className={`px-2 xl:px-3 py-1 text-xs transition-all duration-300 ${
+									className={`px-2 xl:px-3 py-1 text-xs transition-all duration-300 light-sweep ${
 										activeFilter === filter
 											? "bg-gradient-to-r from-orange-500 to-amber-500 text-black font-semibold hover:from-orange-400 hover:to-amber-400"
 											: "text-white/70 hover:text-white hover:bg-white/10"
@@ -75,19 +75,19 @@ export default function Header({ onSearch, onFilterChange, searchQuery, activeFi
 
 					{/* Action Buttons - Right */}
 					<div className="hidden sm:flex items-center gap-2 md:gap-3">
-						<div className="relative p-[1px] bg-gradient-to-r from-blue-400 via-cyan-400 via-orange-500 to-blue-600 to-blue-500 rounded-full animate-border">
+						<div className="relative p-[1px] bg-gradient-to-r from-blue-400 via-cyan-400 via-orange-500 to-blue-600 to-blue-500 rounded-full animate-border transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/20">
 							<Button 
 								size="sm"
-								className="bg-black text-white font-medium hover:bg-gray-900 transition-all duration-300 rounded-full px-3 sm:px-4 md:px-5 py-2 h-auto focus-visible:outline-none focus-visible:ring-0 text-xs sm:text-sm"
+								className="bg-black text-white font-medium hover:bg-gray-900 transition-all duration-300 rounded-full px-3 sm:px-4 md:px-5 py-2 h-auto focus-visible:outline-none focus-visible:ring-0 text-xs sm:text-sm hover:!text-white ripple-effect light-sweep"
 							>
 								<span className="hidden sm:inline">My Courses</span>
 								<span className="sm:hidden">Courses</span>
 							</Button>
 						</div>
-						<div className="relative p-[1px] bg-gradient-to-r from-blue-400 via-cyan-400 via-orange-500 to-blue-600 to-blue-500 rounded-full animate-border">
+						<div className="relative p-[1px] bg-gradient-to-r from-blue-400 via-cyan-400 via-orange-500 to-blue-600 to-blue-500 rounded-full animate-border transition-all duration-300 hover:shadow-2xl hover:shadow-orange-500/20">
 							<Button 
 								size="sm"
-								className="bg-black text-white font-medium hover:bg-gray-900 transition-all duration-300 rounded-full px-3 sm:px-4 md:px-5 py-2 h-auto focus-visible:outline-none focus-visible:ring-0 text-xs sm:text-sm"
+								className="bg-black text-white font-medium hover:bg-gray-900 transition-all duration-300 rounded-full px-3 sm:px-4 md:px-5 py-2 h-auto focus-visible:outline-none focus-visible:ring-0 text-xs sm:text-sm hover:!text-white ripple-effect light-sweep"
 							>
 								Sign Up
 							</Button>
@@ -126,7 +126,7 @@ export default function Header({ onSearch, onFilterChange, searchQuery, activeFi
 								variant={activeFilter === filter ? "default" : "ghost"}
 								size="sm"
 								onClick={() => onFilterChange(filter)}
-								className={`px-2 sm:px-3 py-1 text-xs transition-all duration-300 ${
+								className={`px-2 sm:px-3 py-1 text-xs transition-all duration-300 light-sweep ${
 									activeFilter === filter
 										? "bg-gradient-to-r from-orange-500 to-amber-500 text-black font-semibold hover:from-orange-400 hover:to-amber-400"
 										: "text-white/70 hover:text-white hover:bg-white/10"
