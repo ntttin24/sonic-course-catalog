@@ -7,13 +7,15 @@ interface AnimatedNumberProps {
   suffix?: string;
   duration?: number;
   className?: string;
+  decimals?: number;
 }
 
 export function AnimatedNumber({ 
   value, 
   suffix = "", 
   duration = 2000, 
-  className = "" 
+  className = "",
+  decimals = 0
 }: AnimatedNumberProps) {
   const [displayValue, setDisplayValue] = useState(0);
 
@@ -27,7 +29,7 @@ export function AnimatedNumber({
       
       // Easing function for smooth animation
       const easeOutQuart = 1 - Math.pow(1 - progress, 4);
-      const currentValue = Math.floor(value * easeOutQuart);
+      const currentValue = value * easeOutQuart;
       
       setDisplayValue(currentValue);
 
@@ -47,7 +49,7 @@ export function AnimatedNumber({
 
   return (
     <span className={className}>
-      {displayValue}{suffix}
+      {displayValue.toFixed(decimals)}{suffix}
     </span>
   );
 }

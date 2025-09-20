@@ -87,7 +87,7 @@ export default function Hero() {
 					</div>
 					<div className="text-center">
 						<div className={`text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-1 sm:mb-2 flex items-center justify-center gap-0 number-animate ${isVisible ? 'bounce-in' : ''}`}>
-							<AnimatedNumber value={4.9} duration={1800} />
+							<AnimatedNumber value={4.9} duration={1800} decimals={1} />
 							<Star className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 fill-white text-white" />
 						</div>
 						<div className="text-xs sm:text-sm text-white/60 uppercase tracking-wider">Rating</div>
