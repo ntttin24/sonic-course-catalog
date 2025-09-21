@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { Search } from "lucide-react";
+import { Search, Menu, X } from "lucide-react";
 import type { CourseDifficulty } from "@/types";
 
 interface HeaderProps {
@@ -11,9 +11,11 @@ interface HeaderProps {
 	onFilterChange: (filter: CourseDifficulty | "All") => void;
 	searchQuery: string;
 	activeFilter: CourseDifficulty | "All";
+	showMobileMenu: boolean;
+	setShowMobileMenu: (show: boolean) => void;
 }
 
-export default function Header({ onSearch, onFilterChange, searchQuery, activeFilter }: HeaderProps) {
+export default function Header({ onSearch, onFilterChange, searchQuery, activeFilter, showMobileMenu, setShowMobileMenu }: HeaderProps) {
 	const [showMobileSearch, setShowMobileSearch] = useState(false);
 	
 	const filters: (CourseDifficulty | "All")[] = ["All", "Beginner", "Intermediate", "Advanced"];
@@ -94,15 +96,32 @@ export default function Header({ onSearch, onFilterChange, searchQuery, activeFi
 						</div>
 					</div>
 					
-					{/* Mobile Search Toggle */}
-					<Button
-						variant="ghost"
-						size="sm"
-						className="lg:hidden text-white/70 hover:text-white"
-						onClick={() => setShowMobileSearch(!showMobileSearch)}
-					>
-						<Search className="h-4 w-4 sm:h-5 sm:w-5" />
-					</Button>
+					{/* Mobile Icons - Search and Menu */}
+					<div className="lg:hidden flex items-center gap-2">
+						{/* Mobile Search Toggle */}
+						<Button
+							variant="ghost"
+							size="sm"
+							className="text-white/70 hover:text-white"
+							onClick={() => setShowMobileSearch(!showMobileSearch)}
+						>
+							<Search className="h-4 w-4 sm:h-5 sm:w-5" />
+						</Button>
+						
+						{/* Mobile Menu Toggle */}
+						<Button
+							variant="ghost"
+							size="sm"
+							className="text-white/70 hover:text-white sm:hidden"
+							onClick={() => setShowMobileMenu(!showMobileMenu)}
+						>
+							{showMobileMenu ? (
+								<X className="h-4 w-4" />
+							) : (
+								<Menu className="h-4 w-4" />
+							)}
+						</Button>
+					</div>
 				</div>
 
 				{/* Mobile Search & Filters */}
@@ -137,6 +156,7 @@ export default function Header({ onSearch, onFilterChange, searchQuery, activeFi
 						))}
 					</div>
 				</div>
+
 			</div>
 		</header>
 	);
