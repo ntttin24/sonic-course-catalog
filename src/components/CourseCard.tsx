@@ -54,7 +54,7 @@ export function CourseCard({ course }: CourseCardProps) {
 					
 				</CardHeader>
 
-				<CardContent className="flex-1 space-y-3 sm:space-y-3 md:space-y-4 p-4 sm:p-4 md:p-6 pt-3 sm:pt-3 md:pt-4 flex flex-col">
+				<CardContent className="flex-1 space-y-3 sm:space-y-3 md:space-y-4 p-4 sm:p-4 md:p-6 pt-1 sm:pt-1 md:pt-1 flex flex-col">
 					{/* Description */}
 					<p className="text-sm sm:text-sm text-white/70 leading-relaxed line-clamp-3 sm:line-clamp-3 min-h-[3rem] sm:min-h-[3rem]">
 						{course.description}
